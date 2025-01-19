@@ -9,3 +9,19 @@ image: "image.jpg"
 # Introduction
 
 Pipeline is one of the most important concepts in machine learning with profound practical use. It organizes the machine learning workflow of an entire process of taking raw data, processing it, and building a model that is based off given data to be implemented on countless others. The pipeline includes more than just a model, rather, it is a Blackbox that contains all the tricks and whistles to perform a machine learning process in its entirety. If you feed raw dough into this pipeline, it would perform the necessary work to build a delicious bread from the other end. 
+![Beautiful Bread Coming Out of Oven](oven.jpg)
+
+# Warm up to build a pipeline
+
+A pipeline is typically consisted of the following steps:
+1.	Data Loading  
+The first step to load the raw data into the pipeline. Raw data can be consisted of various formats (e.g. .csv, .xlsx) and from various sources (e.g. API, local).
+Efficient data handling is essential to get started on building a pipeline.  
+2.	Data Preprocessing  
+Raw data is often messy with repeated values, missing values, and/or invalid values. This step is crucial to clean the data as desired before feeding it to the pipeline. Preprocessing also includes basic exploratory data analysis (EDA) to understand the dataset’s structure and patterns. 
+3.	Feature Engineering  
+This steps help filter out the features that are used in the upcoming model. Features can be manipulated by many ways. We often see this step being performed with encoding, combining, and with expert knowledge.  
+4.	Model Training  
+Now it gets to the fun part. Based on the data and questions asked, we choose an appropriate machine learning algorithm and train the model. It is crucial to split the data into training and validation sets and tune the hyperparameters to optimize model.  
+5.	Evaluation  
+After training the model, we evaluate the model’s performance using multiple metrics such as accuracy, f1 score, or precision/recall. After we have a satisfied model we are ready to deploy it to unseen data.  
