@@ -200,8 +200,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </figure>
 </div>
 </section>
-<section id="warm-up-to-build-a-pipeline" class="level1">
-<h1>Warm up to build a pipeline</h1>
+<section id="warm-up-to-building-a-pipeline" class="level1">
+<h1>Warm up to building a pipeline</h1>
 <section id="a-pipeline-is-typically-consisted-of-the-following-steps" class="level2">
 <h2 class="anchored" data-anchor-id="a-pipeline-is-typically-consisted-of-the-following-steps">A pipeline is typically consisted of the following steps:</h2>
 <ol type="1">
@@ -238,7 +238,7 @@ After training the model, we evaluate the model’s performance using multiple m
 <section id="step-1-data-loading" class="level2">
 <h2 class="anchored" data-anchor-id="step-1-data-loading">Step 1: Data Loading</h2>
 <p>Start by loading your dataset. For this example, we’ll use a CSV file:</p>
-<div id="8be8eef7" class="cell" data-execution_count="1">
+<div id="0d81d00d" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the dataset</span></span>
@@ -249,7 +249,7 @@ After training the model, we evaluate the model’s performance using multiple m
 <section id="step-2-data-preprocessing" class="level2">
 <h2 class="anchored" data-anchor-id="step-2-data-preprocessing">Step 2: Data Preprocessing</h2>
 <p>Handle missing values, outliers, and normalize the data.</p>
-<div id="0ae4bc5d" class="cell" data-execution_count="2">
+<div id="7b0fe803" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Fill missing values</span></span>
@@ -262,7 +262,7 @@ After training the model, we evaluate the model’s performance using multiple m
 <section id="step-3-feature-engineering" class="level2">
 <h2 class="anchored" data-anchor-id="step-3-feature-engineering">Step 3: Feature Engineering</h2>
 <p>Transform categorical variables and scale numerical features.</p>
-<div id="8c8d2912" class="cell" data-execution_count="3">
+<div id="bfb260ad" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> OneHotEncoder, StandardScaler</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.compose <span class="im">import</span> ColumnTransformer</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -285,7 +285,7 @@ After training the model, we evaluate the model’s performance using multiple m
 <section id="step-4-model-training" class="level2">
 <h2 class="anchored" data-anchor-id="step-4-model-training">Step 4: Model Training</h2>
 <p>Choose a model and train it on the preprocessed data.</p>
-<div id="4ec463f2" class="cell" data-execution_count="4">
+<div id="316eb6a8" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.ensemble <span class="im">import</span> RandomForestClassifier</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the model</span></span>
@@ -298,7 +298,7 @@ After training the model, we evaluate the model’s performance using multiple m
 <section id="step-5-evaluation" class="level2">
 <h2 class="anchored" data-anchor-id="step-5-evaluation">Step 5: Evaluation</h2>
 <p>Evaluate the model’s performance using appropriate metrics.</p>
-<div id="dcad1150" class="cell" data-execution_count="5">
+<div id="0088f3a0" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> accuracy_score, classification_report</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Make predictions</span></span>
@@ -308,6 +308,25 @@ After training the model, we evaluate the model’s performance using multiple m
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(accuracy_score(test_data[<span class="st">'target_column'</span>], y_pred))</span>
 <span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(classification_report(test_data[<span class="st">'target_column'</span>], y_pred))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</section>
+</section>
+<section id="use-case-and-application" class="level1">
+<h1>Use case and application</h1>
+<section id="real-world-scenarios" class="level2">
+<h2 class="anchored" data-anchor-id="real-world-scenarios">Real World Scenarios</h2>
+<p>ML pipelines are especially useful in scenarios where consistency, scalability and automation are crucial. It is a reproducible modeling schema that could be beneficial in numerous fields, finance, winery, and medicine to name a few. In finance, banks can use a trained model to predict whether a given customer can be approved a loan given his personal information. In healthcare, models can be used to predict disease progression based on patient records, etc.</p>
+</section>
+</section>
+<section id="imitations" class="level1">
+<h1>imitations</h1>
+<p>However, aside from the advantages of a pipeline there also comes limitations. For example, pipelines can struggle when the input data changes drastically, requiring constant monitoring and updates. Over automation may also add unnecessary complexity for simple objects, increasing cost and efficiency for industries.</p>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>By following this guide, you gained a comprehensive understanding of how to:<br>
+1. Design and implement an end-to-end machine learning pipeline.<br>
+2. Optimize workflows for scalability and efficiency.<br>
+3. Deploy models effectively for real-world applications.</p>
+<p>Building ML pipelines can get very simple and very difficult at the same time. It is a process that requires patience and practice. With each project, you will refine your skills and tackle more problems to make meaningful impact. Whether you are trying to build your first pipeline or catching up on the exam tomorrow, thank you for going through my blog and hope your pipelines always run smoothly!</p>
 
 
 </section>

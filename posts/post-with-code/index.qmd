@@ -14,7 +14,7 @@ Pipeline is one of the most important concepts in machine learning with profound
 
 ![Beautiful Bread Coming Out of Oven](oven.jpg)
 
-# Warm up to build a pipeline
+# Warm up to building a pipeline
 
 ## A pipeline is typically consisted of the following steps:
 1.	**Data Loading**  
@@ -47,7 +47,7 @@ After getting an understanding of the structure of a pipeline, we can see that a
 
 Start by loading your dataset. For this example, we’ll use a CSV file:
 
-```{python, eval=FALSE}
+```{python}
 import pandas as pd
 
 # Load the dataset
@@ -59,7 +59,7 @@ print(data.head())
 
 Handle missing values, outliers, and normalize the data.
 
-```{python, eval=FALSE}
+```{python}
 from sklearn.model_selection import train_test_split
 
 # Fill missing values
@@ -73,7 +73,7 @@ train_data, test_data = train_test_split(data, test_size=0.2, random_state=42)
 
 Transform categorical variables and scale numerical features.
 
-```{python, eval=FALSE}
+```{python}
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.compose import ColumnTransformer
 
@@ -97,7 +97,7 @@ X_test = preprocessor.transform(test_data)
 
 Choose a model and train it on the preprocessed data.
 
-```{python, eval=FALSE}
+```{python}
 from sklearn.ensemble import RandomForestClassifier
 
 # Define the model
@@ -111,7 +111,7 @@ model.fit(X_train, train_data['target_column'])
 
 Evaluate the model’s performance using appropriate metrics.
 
-```{python, eval=FALSE}
+```{python}
 from sklearn.metrics import accuracy_score, classification_report
 
 # Make predictions
@@ -128,15 +128,15 @@ print(classification_report(test_data['target_column'], y_pred))
 
 ML pipelines are especially useful in scenarios where consistency, scalability and automation are crucial. It is a reproducible modeling schema that could be beneficial in numerous fields, finance, winery, and medicine to name a few. In finance, banks can use a trained model to predict whether a given customer can be approved a loan given his personal information. In healthcare, models can be used to predict disease progression based on patient records, etc. 
 
-## Limitations
+# imitations
 
 However, aside from the advantages of a pipeline there also comes limitations. For example, pipelines can struggle when the input data changes drastically, requiring constant monitoring and updates. Over automation may also add unnecessary complexity for simple objects, increasing cost and efficiency for industries. 
 
-# Conclusion
+## Conclusion
 
 By following this guide, you gained a comprehensive understanding of how to:  
-1. Design and implement an end-to-end machine learning pipeline.
-2. Optimize workflows for scalability and efficiency.
-3. Deploy models effectively for real-world applications.
+1. Design and implement an end-to-end machine learning pipeline.  
+2. Optimize workflows for scalability and efficiency.  
+3. Deploy models effectively for real-world applications.  
 
 Building ML pipelines can get very simple and very difficult at the same time. It is a process that requires patience and practice. With each project, you will refine your skills and tackle more problems to make meaningful impact. Whether you are trying to build your first pipeline or catching up on the exam tomorrow, thank you for going through my blog and hope your pipelines always run smoothly!

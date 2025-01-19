@@ -75,5 +75,19 @@
     "title": "Blog",
     "section": "",
     "text": "From Data to Model: Building an End-to-End Pipeline in Python\n\n\n\n\n\n\ntutorial\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nJan 18, 2025\n\n\nWangkai Zhu\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJan 15, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html#real-world-scenarios",
+    "href": "posts/post-with-code/index.html#real-world-scenarios",
+    "title": "From Data to Model: Building an End-to-End Pipeline in Python",
+    "section": "Real World Scenarios",
+    "text": "Real World Scenarios\nML pipelines are especially useful in scenarios where consistency, scalability and automation are crucial. It is a reproducible modeling schema that could be beneficial in numerous fields, finance, winery, and medicine to name a few. In finance, banks can use a trained model to predict whether a given customer can be approved a loan given his personal information. In healthcare, models can be used to predict disease progression based on patient records, etc."
+  },
+  {
+    "objectID": "posts/post-with-code/index.html#conclusion",
+    "href": "posts/post-with-code/index.html#conclusion",
+    "title": "From Data to Model: Building an End-to-End Pipeline in Python",
+    "section": "Conclusion",
+    "text": "Conclusion\nBy following this guide, you gained a comprehensive understanding of how to:\n1. Design and implement an end-to-end machine learning pipeline.\n2. Optimize workflows for scalability and efficiency.\n3. Deploy models effectively for real-world applications.\nBuilding ML pipelines can get very simple and very difficult at the same time. It is a process that requires patience and practice. With each project, you will refine your skills and tackle more problems to make meaningful impact. Whether you are trying to build your first pipeline or catching up on the exam tomorrow, thank you for going through my blog and hope your pipelines always run smoothly!"
   }
 ]
