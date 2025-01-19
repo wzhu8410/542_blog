@@ -1,9 +1,11 @@
 ---
-title: "Post With Code"
-author: "Harlow Malloc"
+title: "From Data to Model: Building an End-to-End Pipeline in Python"
+author: "Wangkai Zhu"
 date: "2025-01-18"
-categories: [news, code, analysis]
+categories: [tutorial, code, analysis]
 image: "image.jpg"
 ---
 
-This is a post with executable code.
+# Introduction
+
+Pipeline is one of the most important concepts in machine learning with profound practical use. It organizes the machine learning workflow of an entire process of taking raw data, processing it, and building a model that is based off given data to be implemented on countless others. The pipeline includes more than just a model, rather, it is a Blackbox that contains all the tricks and whistles to perform a machine learning process in its entirety. If you feed raw dough into this pipeline, it would perform the necessary work to build a delicious bread from the other end. 
